@@ -1,5 +1,5 @@
 
-# Welcome to PERN Stack
+# Welcome to Deno Project
 
 > #### To Run the project
 1. Clone the repository
