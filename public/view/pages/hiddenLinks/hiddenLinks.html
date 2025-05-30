@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hidden Links</title>
+  <link rel="stylesheet" href="hiddenLinks.css" />
+</head>
+
+<body class="hidden-body">
+  <div id="header-container"></div>
+  <div class="hidden-container">
+    <div id="popup-container"></div>
+    <div class="sort-container">
+      <label for="sortDropdown">Sort By:</label>
+      <select id="sortDropdown">
+        <option value="recent">Most Recent</option>
+        <option value="avg">Highest Rated (Average)</option>
+        <option value="bayesian">Highest Rated (Bayesian)</option>
+      </select>
+    </div>
+    <h1>🍷 Hidden Links</h1>
+    <p id="hidden-welcome-msg">
+      Here are all your links that you’ve hidden. You can review or restore them anytime.
+    </p>
+
+    <div id="hidden-links-list">
+      <!-- JS will populate hidden links here -->
+    </div>
+
+    <p id="no-hidden-message" class="no-hidden-message">
+      You haven't hidden any links yet.
+    </p>
+  </div>
+
+
+  <script type="module" src="hiddenLinks.js"></script>
+</body>
+<div id="footer-container"></div>
+
+</html>

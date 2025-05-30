@@ -1,0 +1,201 @@
+@import url(../../components/component.css);
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: rgba(255, 255, 255, 0.96);
+  color: #3e2c1c;
+  margin: 0;
+  padding: 40px;
+}
+
+.review-panel {
+  max-width: 900px;
+  margin: auto;
+}
+
+.accordion {
+  border: 1.5px solid #b35c1e;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accordion:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header {
+  background: #f3ede9;
+  color: #3e2c1c;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.2s ease;
+  display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.accordion-header:hover {
+  background: #f7e6d5;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  background: #fffaf3;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.accordion.active .accordion-body {
+  padding: 18px 20px 24px;
+  max-height: 1000px;
+}
+
+.accordion-body p {
+  margin-top: 0;
+}
+
+.wine-link {
+  display: block;
+  color: #1a73e8;
+  margin: 8px 0 12px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.wine-link:hover {
+  text-decoration: underline;
+}
+
+.wine-meta {
+  margin: 10px 0;
+  color: #7f4f24;
+}
+
+.rating-container {
+  display: flex;
+  gap: 6px;
+  margin: 10px 0;
+  font-size: 3rem;
+  user-select: none;
+}
+
+.star {
+  color: lightgray;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+  user-select: none;
+  display: inline-block;
+  width: 3.6rem;
+  text-align: center;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.star.full {
+  color: gold;
+}
+
+.star.half {
+  background: linear-gradient(90deg, gold 50%, lightgray 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: gold;
+}
+
+.interpretation {
+  font-weight: bold;
+  margin: 10px 0;
+  color: #3e2c1c;
+}
+
+textarea {
+  width: 100%;
+  height: 90px;
+  font-family: inherit;
+  padding: 10px;
+  border: 1.8px solid #b35c1e;
+  border-radius: 6px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: #7f4f24;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #b35c1e;
+}
+
+.profile-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  float: right;
+  position: relative;
+}
+
+.profile-pic {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid #b35c1e;
+  cursor: pointer;
+}
+
+.profile-name-hover {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: -110%;
+  transform: translateY(-50%);
+  background-color: #f3ede9;
+  padding: 4px 8px;
+  margin-top: -18px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  z-index: 10;
+}
+
+.profile-container:hover .profile-name-hover {
+  display: block;
+}
+
+.profile-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.accordion-body .profile-bottom {
+  display: none;
+}
+
+.accordion.active .accordion-body .profile-bottom {
+  display: flex;
+}
+
+.accordion.active .accordion-header .profile-container {
+  display: none;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Favourites Links</title>
+  <link rel="stylesheet" href="favourites.css" />
+</head>
+
+<body class="favourites-body">
+  <div id="header-container"></div>
+  <div class="favourites-container">
+    <div id="popup-container"></div>
+    <div class="sort-container">
+      <label for="sortDropdown">Sort By:</label>
+      <select id="sortDropdown">
+        <option value="recent">Most Recent</option>
+        <option value="avg">Highest Rated (Average)</option>
+        <option value="bayesian">Highest Rated (Bayesian)</option>
+      </select>
+    </div>
+    <h1>🍷 Favourites Links</h1>
+    <p id="favourites-welcome-msg">
+      Here are all your links that you’ve favourites.
+    </p>
+
+    <div id="favourites-links-list">
+      <!-- JS will populate favourites links here -->
+    </div>
+
+    <p id="no-favourites-message" class="no-favourites-message">
+      You haven't favourites any links yet.
+    </p>
+  </div>
+
+
+  <script type="module" src="favourites.js"></script>
+</body>
+<div id="footer-container"></div>
+
+</html>

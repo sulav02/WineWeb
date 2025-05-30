@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wine Links - Discover & Share</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+
+<body class="home-body">
+    <div id="header-container"></div>
+    <div id="popup-container"></div>
+    <div id="welcome-message"></div>
+    <div class="home-container">
+        <div class="sort-container">
+            <label for="sortDropdown">Sort By:</label>
+            <select id="sortDropdown">
+                <option value="recent">Most Recent</option>
+                <option value="avg">Highest Rated (Average)</option>
+                <option value="bayesian">Highest Rated (Bayesian)</option>
+            </select>  
+        </div>
+        <h2>Global Links</h2>
+        
+        <main>
+            <section id="links-section">
+                <div id="reviewPanel"></div>
+            </section>
+
+        </main>
+        <p id="no-link-message" class="no-link-message">
+            There is not any available links.  </p>
+    </div>
+
+    <div id="footer-container"></div>
+    <script type="module" src="home.js"></script>
+</body>
+
+</html>

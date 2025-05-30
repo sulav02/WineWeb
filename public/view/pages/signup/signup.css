@@ -1,0 +1,131 @@
+
+@import url("../../components/component.css");
+
+.auth-signup {
+  font-family: "Georgia", "Times New Roman", serif;
+  background: 
+    url("../../../public/images/wine.PNG") center center / cover no-repeat fixed,
+    linear-gradient(to bottom, rgba(248, 246, 243, 0.8), rgba(230, 223, 218, 0.8));
+  color: #3e2c1c;
+  margin: 0;
+  padding: 0;
+  flex-direction: column; /* Stack items vertically */
+  line-height: 1.6;
+  }
+  
+  .signup-container {
+    margin-left: 35%;
+    margin-top: 2%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  justify-content: center;
+  flex-direction: column;
+  }
+  
+  .signup-container h1 {
+    color: #7f4f24;
+    margin-bottom: 1.5rem;
+  }
+  
+  .signup-container input {
+    display: block;
+    width: 95%;
+    padding: 0.75rem;
+    margin: 0.6rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .signup-container button {
+    background-color: #7f4f24;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .signup-container button:hover {
+    background-color: #b35c1e;
+  }
+  
+  .signup-link {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .signup-link a {
+    color: #7f4f24;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .auth-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .password-wrapper {
+    position: relative;
+    width: 95%;
+  }
+  .show-password {
+    display: flex;
+    align-items: center;
+    margin-top: 0.4rem;
+    font-size: 0.95rem;
+    color: #7f4f24;
+    justify-content: flex-start;
+  }
+  
+  .show-password input[type="checkbox"] {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    accent-color: #7f4f24; /* makes checkbox brown in modern browsers */
+    cursor: pointer;
+  }
+  
+  .show-password label {
+    cursor: pointer;
+  }
+  
+  .password-wrapper input {
+    width: 93%; /* match  input width */
+    padding-right: 2.5rem; /* space for the eye icon */
+  }
+  
+  .show-password-label {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #7f4f24;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    gap: 8px; /* Optional: space between checkbox and text */
+  }
+  
+  .show-password-label input[type="checkbox"] {
+    width: 28px;
+    height: 18px;
+    accent-color: #7f4f24; /* Makes checkbox brown */
+    cursor: pointer;
+  }
+  
+  .show-password-label input {
+    margin-right: 5px;
+    transform: scale(1.1); /* Make the checkbox slightly larger */
+  }
+  
+  .show-password-label:hover {
+    text-decoration: underline;
+  }
+  

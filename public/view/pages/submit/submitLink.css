@@ -1,0 +1,83 @@
+@import url("../../components/component.css");
+
+/* General Layout */
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background: url("../../../public/images/wine.PNG") no-repeat center center
+    fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #3e2c1c;
+  line-height: 1.6;
+}
+
+
+/* Form Section */
+main {
+  max-width: 600px;
+  margin: 3rem auto;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+main h2 {
+  color: #7f4f24;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: red;
+  margin-top: -4%;
+  margin-left: 5px;
+}
+
+input[type="text"],
+textarea {
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fefefe;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button[type="submit"] {
+  background-color: #7f4f24;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #b35c1e;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #000;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+
+

@@ -1,0 +1,148 @@
+@import url("../../components/component.css");
+
+
+/* Elegant Wine-Themed Hidden Links Page */
+
+.favourites-body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background: linear-gradient(to bottom, #faf6f3, #e8dfd7);
+    color: #3e2c1c;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .favourites-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2.5rem 3rem;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    font-family: Georgia, serif;
+    position: relative;
+  }
+  
+  .favourites-container h1 {
+    font-size: 2rem;
+    color: #7f4f24;
+    margin-bottom: 0.4rem;
+    font-weight: 700;
+  }
+  
+  #favourites-welcome-msg {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #8a5b2d;
+    margin-bottom: 1.8rem;
+    font-family: "Georgia", serif;
+  }
+  
+  #favourites-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  /* Individual favourites link card */
+  .favourites-link-card {
+    background-color: #fff6f1;
+    border: 1.8px solid #c69c6d;
+    border-radius: 10px;
+    padding: 14px 20px;
+    box-shadow: 0 3px 8px rgba(198, 156, 109, 0.3);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .favourites-link-card:hover {
+    box-shadow: 0 5px 16px rgba(198, 156, 109, 0.6);
+  }
+  
+  .favourites-link-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #7f4f24;
+    margin-bottom: 0.2rem;
+  }
+  
+  .favourites-link-url {
+    color: #a1703a;
+    font-style: italic;
+    font-size: 0.9rem;
+    word-break: break-all;
+    margin-bottom: 0.5rem;
+  }
+  
+  .favourites-link-description {
+    color: #634829;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Message shown when no links favourites */
+  .no-favourites-message {
+    color: #777;
+    font-style: italic;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  /* Unhide button styling */
+.unhide-button {
+    background-color: #7f4f24; /* wine brown */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-family: Georgia, serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    margin-top: 10px;
+    user-select: none;
+    display: inline-block;
+  }
+  
+  .unhide-button:hover {
+    background-color: #a76b38; /* lighter brown on hover */
+  }
+  
+  .unhide-button:active {
+    background-color: #5a3a14;
+  }
+
+  .sort-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #f8f8f8;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .sort-container label {
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia, serif;
+  }
+  
+  .sort-container select {
+    font-size: 15px;
+    font-family: Georgia, serif;
+    padding: 4px 8px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .sort-container select:focus {
+    outline: none;
+    border-color: #888;
+  }

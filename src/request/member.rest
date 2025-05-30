@@ -1,0 +1,66 @@
+@BASE_URL = http://localhost:5000/api/v1/members
+@TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJmNDE0YTNhMy1iYjkxLTQzYmQtYmMwNi1hMmQ1ZWNhN2QyNWIiLCJ1c2VybmFtZSI6InN1bGF2IiwiZXhwIjoxNzQ4MTY5OTgwfQ.VCrvrLkrwZhLFcHaAgxByOg797feiXViKvhUOZVe-6I
+
+# Register Member
+POST {{BASE_URL}}/register
+Content-Type: application/json
+
+{
+    "fullname":"Sulav Dhakal",
+    "email":"sulav@admin.com",
+    "username":"sulav",
+    "password":"Sulav@012"
+}
+
+###
+
+# login Member
+POST {{BASE_URL}}/login
+Content-Type: application/json
+
+{
+    "email":"sulav@admin.com",
+    "username":"sulav",
+    "password":"Sulav@012"
+}
+
+###
+
+# Get Member By Id
+GET {{BASE_URL}}/f414a3a3-bb91-43bd-bc06-a2d5eca7d25b
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+###
+
+# Get Member Favorite list
+GET {{BASE_URL}}/f414a3a3-bb91-43bd-bc06-a2d5eca7d25b/favorites
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+###
+
+# Get all member
+GET {{BASE_URL}}/
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+###
+
+# Update Memer By Id
+PATCH {{BASE_URL}}/d79220ae-9c1a-426d-8819-c204931e2d9f
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+    "username": "developer10",
+    "email": "developer10@wine.com"
+}
+###
+
+# DELETE Memer By Id
+DELETE  {{BASE_URL}}/996d5516-9361-4825-ada9-f65d6886ec28
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+###

@@ -1,0 +1,81 @@
+/* Privacy Policy Styling - Wine Links */
+
+@import url("../../components/component.css");
+
+
+body.privacy-body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background: url("../../../public/images/wine.PNG") no-repeat center center fixed;
+    background-size: cover;
+    color: #3e2c1c;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .privacy-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .privacy-container h1 {
+    font-size: 2.5rem;
+    color: #7f4f24;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .privacy-container h2 {
+    font-size: 1.6rem;
+    color: #b35c1e;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .privacy-container p,
+  .privacy-container ul {
+    font-size: 1rem;
+    color: #3e2c1c;
+    margin-bottom: 1rem;
+  }
+  
+  .privacy-container ul {
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+  }
+  
+  .privacy-container li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Footer */
+  .privacy-footer {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.95rem;
+    color: #7f4f24;
+    background-color: #f6f3f0;
+    border-top: 1px solid #ddd0c4;
+    margin-top: 3rem;
+  }
+  
+  .privacy-footer p {
+    margin: 0.5rem 0;
+  }
+  
+  .privacy-footer a {
+    color: #425de7;
+    text-decoration: none;
+    margin: 0 0.8rem;
+    font-weight: 600;
+  }
+  
+  .privacy-footer a:hover {
+    color: #0546fa;
+    text-decoration: underline;
+  }
+  

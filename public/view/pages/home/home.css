@@ -1,0 +1,84 @@
+/* Elegant Wine-Themed Design */
+
+@import url("../../components/component.css");
+
+.home-body {
+  font-family: "Georgia", "Times New Roman", serif;
+  background: linear-gradient(to bottom, #f8f6f3, #e6dfda);
+  color: #3e2c1c;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.home-container {
+  max-width: 950px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  position: relative;
+  font-family: Georgia, serif;
+}
+
+.sort-container {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #f8f8f8;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.sort-container label {
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Georgia, serif;
+}
+
+.sort-container select {
+  font-size: 15px;
+  font-family: Georgia, serif;
+  padding: 4px 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.sort-container select:focus {
+  outline: none;
+  border-color: #888;
+}
+
+main {
+  max-width: 1000px;
+  padding: 0 2rem;
+}
+
+
+#welcome-message {
+  font-size: 1.2rem;
+  font-weight: 600;       /* Semi-bold for emphasis */
+  color: #7f4f24;         /* A warm brown color matching your theme */ 
+  margin: 1rem 0;         /* Some vertical spacing */
+  margin-left: 30px; 
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;            /* Space between emoji and text */
+  font-family: "Georgia", "Times New Roman", serif; 
+}
+
+ /* Message shown when no links hidden */
+ .no-link-message {
+  color: #777;
+  font-style: italic;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+}

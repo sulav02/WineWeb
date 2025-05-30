@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign Up - Wine Links</title>
+    <link rel="stylesheet" href="signup.css" />
+</head>
+
+<body class="signup-body">
+    <div class="signup-container">
+        <h1>Create Account</h1>
+        <form action="/signup" method="POST">
+            <input type="text" name="fullname" placeholder="Full Name" required />
+            <input type="text" name="username" placeholder="Create a Username" required />
+
+            <input type="email" name="email" placeholder="Your Email" required />
+           
+            <div class="password-wrapper">
+                <input type="password" name="password" id="signup-password" placeholder="Create a Password" required />
+
+                <label class="show-password-label">
+                    <input type="checkbox" id="show-password-checkbox" />
+                    Show Password
+                </label>
+            </div>
+
+            <button type="submit"><strong>Sign Up</strong></button>
+            <p class="auth-link">Already have an account? <a href="../login/login.html">Login</a></p>
+        </form>
+    </div>
+
+    <script type="module" src="signup.js"></script>
+    <div id="footer-container"></div>
+
+
+</body>
+
+</html>

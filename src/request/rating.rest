@@ -1,0 +1,40 @@
+@BASE_URL = http://localhost:5000/api/v1/ratings
+@TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJmNDE0YTNhMy1iYjkxLTQzYmQtYmMwNi1hMmQ1ZWNhN2QyNWIiLCJ1c2VybmFtZSI6InN1bGF2IiwiZXhwIjoxNzQ4MTY5OTgwfQ.VCrvrLkrwZhLFcHaAgxByOg797feiXViKvhUOZVe-6I
+
+# Rate a Link (Positive or Negative)
+POST {{BASE_URL}}/
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+  "member_id": "f414a3a3-bb91-43bd-bc06-a2d5eca7d25b",
+  "link_id": "bd5eb4e8-c2dd-4ddf-b52e-df4ae4fedadc",
+  "rating": 0.5
+}
+
+###
+
+# Get Rating Summary for a Link
+GET {{BASE_URL}}/link/2f603d99-560e-4029-833c-a8e558752dbb
+Authorization: Bearer {{TOKEN}}
+
+###
+
+# Get All Ratings by Member
+GET {{BASE_URL}}/member/16d389f4-9f92-4958-a3b8-b025fd9cfec3
+Authorization: Bearer {{TOKEN}}
+
+###
+
+# Update an Existing Rating
+PATCH {{BASE_URL}}/
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+  "member_id": "0f35d4b7-8c13-4392-b206-bcbde0507295",
+  "link_id": "2f603d99-560e-4029-833c-a8e558752dbb",
+  "rating": 
+}
+
+###

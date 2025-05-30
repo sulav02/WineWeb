@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Submit New Link - Wine Links</title>
+    <link rel="stylesheet" href="submitLink.css" />
+</head>
+
+<body>
+    <div id="header-container"></div>
+    <div id="popup-container"></div>
+    <main>
+        <h2>Submit a New Wine Link</h2>
+        <form id="link-form">
+            <input type="text" id="title" placeholder="Link Title" required />
+            <input type="text" id="url" placeholder="https://wine.com" required />
+            <p id = "url-validation" hidden>URL must be valid</p>
+            <textarea id="description" placeholder="Enter a short description" required></textarea>
+            <button type="submit">Submit Link</button>
+        </form>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script type="module" src="submit.js"></script>
+</body>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Deno App</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <h1>Hello from Frontend</h1>
+    <button id="getDataBtn">Get Data</button>
+    <p id="data"></p>
+
+    <script>
+        document.getElementById("getDataBtn").addEventListener("click", async () => {
+            try {
+                const response = await fetch("/api/wine");
+                if (!response.ok) throw new Error("Network response was not ok");
+                const data = await response.json();
+                document.getElementById("data").textContent = data.message;
+            } catch (error) {
+                document.getElementById("data").textContent = "Failed to fetch data";
+                console.error("Fetch error:", error);
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+@BASE_URL = http://localhost:5000/api/v1/links
+@TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiJmNDE0YTNhMy1iYjkxLTQzYmQtYmMwNi1hMmQ1ZWNhN2QyNWIiLCJ1c2VybmFtZSI6InN1bGF2IiwiZXhwIjoxNzQ4NTgxNTEyfQ.n2o_YO5tn1m-Ry3WptH3w5AuNSuJJQ3NMHi7BujblYc
+
+# Add New Link
+POST {{BASE_URL}}/
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+  "title": "cow",
+  "description": "cow hosting platform",
+  "url": "https://cow.com",
+  "member_id": "f414a3a3-bb91-43bd-bc06-a2d5eca7d25b"
+}
+
+###
+
+# ✅ Get All Member Favourite Links (Most Recent)
+GET {{BASE_URL}}/favorite-links/f414a3a3-bb91-43bd-bc06-a2d5eca7d25b?sort=highest_rated_bayesian
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+###
+
+# ✅ Get All Member Hidden Links (Most Recent)
+GET {{BASE_URL}}/hidden-links/f414a3a3-bb91-43bd-bc06-a2d5eca7d25b?sort=highest_rated_bayesian
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+###
+
+# ✅ Get All Links (Most Recent)
+GET {{BASE_URL}}/
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+###
+
+# ✅ Get All Links (Highest Rated)
+GET {{BASE_URL}}/?sort=highest_rated_bayesian
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+####
+
+# ✅ Get All Links (Highest Rated)
+GET {{BASE_URL}}/?sort=highest_rated_avg
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+###
+
+# ✅ Get Link Details by ID
+GET {{BASE_URL}}/a0b4c8b9-4e21-41a1-9992-49264956c21d
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+###
+
+# ✅ Hide a Link (Member only)
+PATCH {{BASE_URL}}/hide/3227f135-178c-45a6-a776-98a15a2870c6
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+  "member_id": "f414a3a3-bb91-43bd-bc06-a2d5eca7d25b"
+}
+
+###
+
+
+# ✅ Unhide a Link (Member only)
+PATCH {{BASE_URL}}/unhide/fdc8122f-f16e-41ef-97ad-47cc7f2ae166
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+  "member_id": "f414a3a3-bb91-43bd-bc06-a2d5eca7d25b"
+}
+
+###
+
+# ✅ Delete a Link
+DELETE {{BASE_URL}}/3ac851c7-29a3-4f4a-92d0-c4de7d98b576
+Content-Type: application/json
+Authorization: Bearer {{TOKEN}}
+
+{
+  "member_id": "f414a3a3-bb91-43bd-bc06-a2d5eca7d25b"
+}
+
+###
+
+# ✅ Get All Links by a Member
+GET {{BASE_URL}}/member/0f35d4b7-8c13-4392-b206-bcbde0507295
+Authorization: Bearer {{TOKEN}}
+
+###

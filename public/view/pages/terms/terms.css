@@ -1,0 +1,48 @@
+/* Terms Page Specific Styling */
+
+@import url("../../components/component.css");
+
+body.terms-page {
+  font-family: "Georgia", "Times New Roman", serif;
+  background-image: url("../../../public/images/wine.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  backdrop-filter: blur(3px);
+}
+
+.terms-container {
+  background: rgba(255, 255, 255, 0.92);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  max-width: 850px;
+  margin: 3rem auto;
+}
+
+.terms-container h1 {
+  font-size: 2.5rem;
+  color: #7f4f24;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.terms-container h2,
+.terms-container h3 {
+  color: #7f4f24;
+}
+
+.terms-container p {
+  color: #3e2c1c;
+  margin-bottom: 1.5rem;
+}
+
+.terms-container a {
+  color: #425de7;
+  text-decoration: underline;
+}
+
+.terms-container a:hover {
+  color: #0546fa;
+}
