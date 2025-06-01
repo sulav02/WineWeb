@@ -25,8 +25,14 @@ cd WineWeb
 - **Note:** Rename .env.sample to .env and update with your **POSTGRES DETAILS**  
   <br>
 
-3. And start the project:
+3. And start the backend server:
 
 ```command
 deno run --watch --allow-net --allow-env --allow-read --allow-write src/server.js
 ```
+
+4. **Run the front-end** using Live Server in VS Code (`Go Live` button). If you don't have  `Go Live` button, please download and install the Live-Server extension. You can copy this extension id to download `ritwickdey.LiveServer` in your VS Code IDE.
+__Example: Open your browser to the local address provided by Live Server (e.g., `http://127.0.0.1:57755`).__
+
+## Author
+#### Sulav Dhakal
