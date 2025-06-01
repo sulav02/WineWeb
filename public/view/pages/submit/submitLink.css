@@ -3,7 +3,7 @@
 /* General Layout */
 body {
   font-family: "Georgia", "Times New Roman", serif;
-  background: url("../../../public/images/wine.PNG") no-repeat center center
+  background: url("../../../assets/images/wine.PNG") no-repeat center center
     fixed;
   background-size: cover;
   margin: 0;

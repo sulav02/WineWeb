@@ -131,7 +131,6 @@ export const unhideLink = async (linkId) => {
     try {
         const response = await http.patch(`${LINK_BASE_URL}/unhide/${linkId}`, {member_id}, token);
         console.log(response);
-        
         return response;
     } catch (error) {
         console.error("Hide Link Error:", error);

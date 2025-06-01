@@ -11,7 +11,7 @@ export const loginUser = async (loginData) => {
     } catch (error) {
         response = error
     }
-    return response  
+    return response
 }
 
 export const registerUser = async (signupData) => {

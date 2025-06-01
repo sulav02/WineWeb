@@ -1,10 +1,10 @@
 // Import the functions from footer.js
-import { appendFooterToElement } from '../../components/footer/footer.js';
-import { appendPopupToElement } from '../../components/popups.js';
-import { appendHeaderToElement } from '../../components/header/header.js';
-import { createWineReviewComponent } from '../../components/WineLinkReview.js';
-import * as linkController from "../../../controller/linkController.js"
-import { transformToUiWineLinksList } from '../../../constant/transformToUiWineLinksList.js';
+import { appendFooterToElement } from '/public/view/components/footer/footer.js';
+import { appendPopupToElement } from '/public/view/components/popups.js';
+import { appendHeaderToElement } from '/public/view/components/header/header.js';
+import { createWineReviewComponent } from '/public/view/components/WineLinkReview.js';
+import * as linkController from "./public/controller/linkController.js"
+import { transformToUiWineLinksList } from './public/constant/transformToUiWineLinksList.js';
 
 const isLoggedIn = Boolean(localStorage.getItem('token'));  // Example
 const fullname = localStorage.getItem('fullname');
@@ -48,7 +48,7 @@ function renderWineList(wineData) {
         new createWineReviewComponent({
             containerId: 'reviewPanel',
             wineList: transformToUiWineLinksList(wineData),
-            isLoggedIn:isLoggedIn
+            isLoggedIn: isLoggedIn
         });
     } else {
         noLinkMessage.style.display = "block";
@@ -60,7 +60,6 @@ function renderWineList(wineData) {
 const getAllMostRecentLinks = async () => {
     try {
         const response = await linkController.getAllMostRecentLinks();
-        console.log(response.data);
         return response.data;
     } catch (error) {
         console.log(error);

@@ -1,6 +1,6 @@
 /* Elegant Wine-Themed Design */
 
-@import url("../../components/component.css");
+@import url("/public/view/components/component.css");
 
 .home-body {
   font-family: "Georgia", "Times New Roman", serif;

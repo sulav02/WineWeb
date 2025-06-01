@@ -4,65 +4,67 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Profile</title>
+    <title>Contact Us - Wine Links</title>
     <link rel="stylesheet" href="profile.css" />
 </head>
 
-<body class="profile-body">
+<body class="myprofile-body">
     <div id="header-container"></div>
     <div id="popup-container"></div>
-    <div class="main-content">
-    <div class="profile-container">
+    <div class="myprofile-container">
+        <h1>My Profile</h1>
 
-        <!-- Divider row -->
-        <div class="divider-row">
-            <div class="divider-item">
-                <span class="label">Wine Points:</span>
-                <span class="value">0 🍷</span>
-            </div>
-            <div class="divider-item">
-                <span class="label">Member Since:</span>
-                <span class="value">2022-03-15</span>
-            </div>
-        </div>
-
-        <!-- Profile Header -->
-        <div class="profile-header">
-            <img id="profilePic" src="" alt="Profile Picture">
-            <h2 id="fullName"></h2>
-        </div>
-    
-        <!-- Form -->
+        <!-- ✅ Keep only this form -->
         <form class="profile-form" onsubmit="handleUpdate(event)">
+            <!-- Divider row -->
+            <div class="divider-row">
+                <div class="divider-item">
+                    <span class="label">Wine Points:</span>
+                    <span class="value">0 🍷</span>
+                </div>
+                <div class="divider-item">
+                    <span class="label">Member Since:</span>
+                    <span class="value">2022-03-15</span>
+                </div>
+            </div>
+
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <img id="profilePic" src="" alt="Profile Picture">
+                <h2 id="fullName"></h2>
+            </div>
+
             <!-- Full Name -->
             <div class="form-row">
                 <label for="inputFullname">Full Name</label>
                 <input id="inputFullname" type="text" placeholder="Your Name" required />
             </div>
-    
+
             <!-- Username (read-only) -->
             <div class="form-row">
                 <label>Username</label>
                 <input type="text" placeholder="example1" readonly />
             </div>
-    
+
             <!-- Email -->
             <div class="form-row">
                 <label for="inputEmail">Email</label>
                 <input id="inputEmail" type="email" placeholder="example@wine.com" required />
             </div>
-              
-    
+
             <!-- Submit Button -->
             <div class="form-actions">
                 <button type="submit" class="submit-btn">Update Profile</button>
             </div>
+
+            <div id="form-status" class="form-status"></div>
         </form>
     </div>
-    </div>
-        
+
     <div id="footer-container"></div>
+
     <script type="module" src="profile.js"></script>
 </body>
+
 
 </html>

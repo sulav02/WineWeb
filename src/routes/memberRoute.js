@@ -8,7 +8,7 @@ const router = new Router();
 router.post('/register', memberController.registerMember);
 router.post('/login', memberController.loginMember);
 router.get('/:id', auth.verifyUser, memberController.getMemberById);
-router.get('/:id/facorites', auth.verifyUser, memberController.getMemberFavoriteLinks);
+router.get('/:id/favorites', auth.verifyUser, memberController.getMemberFavoriteLinks);
 router.get('/', auth.verifyUser, memberController.getAllMembers);
 router.patch('/:id', auth.verifyUser, memberController.updateMember);
 router.delete('/:id', auth.verifyUser, memberController.deleteMember);

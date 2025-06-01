@@ -60,7 +60,7 @@ form.addEventListener("submit", async function (e) {
          
             // Set a flag to show popup on homepage
             localStorage.setItem('showLoginPopup', 'true');
-            window.location.href = '../../pages/home/home.html';
+            window.location.href = '/';
 
         } else {
             showError(response.message || "❌ Login failed. Please try again.");  // UI message
@@ -68,7 +68,6 @@ form.addEventListener("submit", async function (e) {
 
     } catch (err) {
         console.error("Login failed:", err);
-
         showError(err.message || "❌ Login failed. Please try again.");  // UI message
     }
 });

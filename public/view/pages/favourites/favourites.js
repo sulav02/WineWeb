@@ -86,7 +86,5 @@ async function fetchAndRenderBySort(selected) {
     } else {
         wineLinksData = await getAllFavouriteMostRecentLinks();
     }
-    console.log(wineLinksData);
-    
     renderFavouriteWineList(wineLinksData);
 }

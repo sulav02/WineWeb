@@ -160,7 +160,7 @@ export function createWineReviewComponent({
                     cancelText: 'Cancel'
                 });
                 popup.show(() => {
-                    window.location.href = "../../pages/login/login.html";
+                    window.location.href = "/public/view/pages/login/login.html";
                 });
                 console.log("⚠️ You are not logged in. Please log in to rate.");
             };

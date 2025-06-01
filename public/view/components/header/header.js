@@ -7,18 +7,18 @@ export const createHeader = (isLoggedIn = false) => {
         <h1>Wine Links - Discover & Share</h1>
         <p>Your community for sharing and rating the best wine links or wine-related content</p>
         <nav>
-            <a href="../../pages/home/home.html">Home</a>
-            <a href="../../pages/about/about.html">About</a>
-            <a href="../../pages/contact/contact.html">Contact</a>
+            <a href="/">Home</a>
+            <a href="/public/view/pages/about/about.html">About</a>
+            <a href="/public/view/pages/contact/contact.html">Contact</a>
             ${isLoggedIn ? `
-                <a href="../../pages/favourites/favourites.html">Favourites</a>
-                <a href="../../pages/submit/submitLink.html">Submit a Link</a>
-                <a href="../../pages/profile/profile.html">Profile</a>
-                <a href="../../pages/hiddenLinks/hiddenLinks.html">Hidden-Links</a>
+                <a href="/public/view/pages/favourites/favourites.html">Favourites</a>
+                <a href="/public/view/pages/submit/submitLink.html">Submit a Link</a>
+                <a href="/public/view/pages/profile/profile.html">Profile</a>
+                <a href="/public/view/pages/hiddenLinks/hiddenLinks.html">Hidden-Links</a>
                  <a href="#" id="logout-link">Logout</a>
             ` : `
-                <a href="../../pages/signup/signup.html">Sign Up</a>
-                <a href="../../pages/login/login.html">Login</a>
+                <a href="/public/view/pages/signup/signup.html">Sign Up</a>
+                <a href="/public/view/pages/login/login.html">Login</a>
             `}
         </nav>
     `;
@@ -39,7 +39,7 @@ export const createHeader = (isLoggedIn = false) => {
                     event.preventDefault();
                     popup.show(() => {
                         localStorage.clear()
-                        window.location.href = "../../pages/login/login.html";
+                        window.location.href = "/public/view/pages/login/login.html";
                     });
                 });
             }

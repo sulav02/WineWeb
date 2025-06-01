@@ -67,6 +67,7 @@ window.handleUpdate = async function (e) {
 
     try {
         const response = await userController.updateUserProfile(updateData);
+        
         if(response.success==true){
             appendPopupToElement('popup-container', "✅ Profile updated successfully! ✅")
         }

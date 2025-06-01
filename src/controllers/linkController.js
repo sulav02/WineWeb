@@ -88,8 +88,6 @@ export const getAllMemberFavouriteLinks = asyncHandler(async (req, res) => {
 
 export const getAllMemberHiddenLinks = asyncHandler(async (req, res) => {
     const { member_id } = req.params;
-    console.log(member_id);
-    
     const { sort = "recent" } = req.query;
 
     const Link = await LinkModel;
@@ -172,12 +170,12 @@ export const getAllLinks = asyncHandler(async (req, res) => {
 
             const userRating = ratings.filter(r => link.member_id == r.member_id).map(r => r.rating);
             const userReview = ratings.filter(r => link.member_id == r.member_id).map(r => r.review);
-            
+
             return {
                 ...link,
                 member,
-                userRating:userRating[0] || 0,
-                userReview:userReview[0] ||"",
+                userRating: userRating[0] || 0,
+                userReview: userReview[0] || "",
                 average_rating: R.toFixed(2),
                 bayesian_rating: bayesianRating.toFixed(2),
                 rating_count: count,
@@ -226,9 +224,9 @@ export const hideLink = asyncHandler(async (req, res) => {
         return res.status(404).json(failure("Link not found"));
     }
 
-    if (link.member_id !== member_id) {
-        return res.status(403).json(failure("You are not authorized to hide this link"));
-    }
+    // if (link.member_id !== member_id) {
+    //     return res.status(403).json(failure("You are not authorized to hide this link"));
+    // }
 
     const updatedLink = await Link.update({ _id: id }, { hidden: true });
     res.status(200).json(success("Link hidden successfully", updatedLink));

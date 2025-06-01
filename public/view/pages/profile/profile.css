@@ -1,26 +1,35 @@
-@import url("../../components/component.css");
+/* Contact Page Styles */
+@import url(../../components/component.css);
 
-.profile-body {
+.myprofile-body {
   font-family: "Georgia", "Times New Roman", serif;
-  background: 
-    url("../../../public/images/wine.PNG") center center / cover no-repeat fixed,
-    linear-gradient(to bottom, #f8f6f3, #e6dfda);
+  background:
+    url("../../../assets/images/wine.PNG") center center / cover no-repeat fixed,
+    linear-gradient(to bottom, rgba(248, 246, 243, 0.8), rgba(230, 223, 218, 0.8));
   color: #3e2c1c;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
 }
 
-.profile-container {
-  width: 90%;
-  max-width: 550px;
-  padding: 2rem 1.5rem;
-  background: #f7b57cf4;
+.myprofile-container {
+  max-width: 500px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px 40px;
   border-radius: 12px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.myprofile-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.myprofile-container label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
 /* Profile header */
 .profile-header {
   display: flex;
@@ -72,6 +81,7 @@
   border-radius: 6px;
   font-size: 1rem;
   outline: none;
+  margin: 10px;
 }
 
 .form-row input:focus {
